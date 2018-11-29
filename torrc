@@ -1,0 +1,13 @@
+ClientOnly 1
+SOCKSPort 9050
+SOCKSPolicy accept 127.0.0.1/8
+Log notice file /var/log/tor/notices.log
+ControlPort 9051
+HiddenServiceStatistics 0
+ORPort 9001
+LongLivedPorts 21,22,706,1863,5050,5190,5222,5223,6523,6667,6697,8300,8233
+ExitPolicy reject *:*
+DisableDebuggerAttachment 0
+HiddenServiceDir /var/lib/tor/zcash-service/
+HiddenServicePort 8233 127.0.0.1:8233
+HiddenServicePort 18233 127.0.0.1:18233
