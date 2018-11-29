@@ -6,6 +6,7 @@ if [ -n "$TOR" ]; then
 		echo "gen=0" >> /root/.zcash/zcash.conf
 		echo "genproclimit=-1" >> /root/.zcash/zcash.conf
 		echo "equihashsolver=tromp" >> /root/.zcash/zcash.conf
+		echo "exportdir=/root/export" >> /root/.zcash/zcash.conf
 		echo "addnode=zcashiqykswlzpsu.onion" >> /root/.zcash/zcash.conf
 		echo "addnode=zcashqhrmju6zfhn.onion" >> /root/.zcash/zcash.conf
 		echo "addnode=zcashgmvxwrmjsut.onion" >> /root/.zcash/zcash.conf
@@ -55,6 +56,7 @@ else
 		echo "gen=0" >> /root/.zcash/zcash.conf
 		echo "genproclimit=-1" >> /root/.zcash/zcash.conf
 		echo "equihashsolver=tromp" >> /root/.zcash/zcash.conf
+		echo "exportdir=/root/export" >> /root/.zcash/zcash.conf
 	fi
 	zcash-fetch-params
 	zcashd -experimentalfeatures -paymentdisclosure -debug=paymentdisclosure -txindex=1
